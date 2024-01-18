@@ -10,6 +10,7 @@
 * https://github.com/kcjengr/probe_basic/tree/main
 * https://github.com/kcjengr/qtpyvcp
 * https://github.com/persei802/QtDragon_hd/
+* http://tom-itx.no-ip.biz:81/~webpage/cnc/configs/NEW_MILL_SHOP_2.8.4/ -- Axis config with side panel from Tom_L, one for A axis, one without
   
 **Basic Install Steps**
 1. Install linuxCNC which as of now is https://www.linuxcnc.org/iso/LinuxCNC_2.9.2-amd64.hybrid.iso from https://linuxcnc.org/downloads/
