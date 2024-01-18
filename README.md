@@ -5,6 +5,14 @@
   4. CMM-EC01 x1
   5. EMM-PG01L x1
 
+
+**Basic Install Steps**
+1. Install linuxCNC which as of now is https://www.linuxcnc.org/iso/LinuxCNC_2.9.2-amd64.hybrid.iso from https://linuxcnc.org/downloads/
+2. Install EtherCAT https://forum.linuxcnc.org/ethercat/45336-ethercat-installation-from-repositories-how-to-step-by-step
+    * just need to run this line from the top of that page because the rest is already configured for you in the image from step 1
+
+      ``sudo apt install ethercat-master libethercat-dev  linuxcnc-ethercat``
+
 **Setup Notes**
 
 * Delta files download: https://downloadcenter.deltaww.com/en-US/DownloadCenter?v=1&CID=06&itemID=060201&downloadID=B3%20Series&sort_expr=cdate&sort_dir=DESC
