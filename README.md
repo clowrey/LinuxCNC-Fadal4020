@@ -9,6 +9,7 @@
 * https://github.com/LinuxCNC/linuxcnc
 * https://github.com/kcjengr/probe_basic/tree/main
 * https://github.com/kcjengr/qtpyvcp
+* https://github.com/persei802/QtDragon_hd/
   
 **Basic Install Steps**
 1. Install linuxCNC which as of now is https://www.linuxcnc.org/iso/LinuxCNC_2.9.2-amd64.hybrid.iso from https://linuxcnc.org/downloads/
