@@ -13,18 +13,24 @@
 **Basic Install Steps**
 1. Install linuxCNC which as of now is https://www.linuxcnc.org/iso/LinuxCNC_2.9.2-amd64.hybrid.iso from https://linuxcnc.org/downloads/
     * The default image from downloads is actually from RodW as of today 1/17/2024 and includes the repos for Probe Basic + EtherCAT https://forum.linuxcnc.org/9-installing-linuxcnc/49819-debian-12-bookworm-live-installer-iso-for-linuxcnc-x86-64
-3. Install EtherCAT https://forum.linuxcnc.org/ethercat/45336-ethercat-installation-from-repositories-how-to-step-by-step
-    * run this line from the top of that page because most is already configured for you in the image from step 1
 
-      ``sudo apt install ethercat-master libethercat-dev  linuxcnc-ethercat``
-      
-      ``cd ~/dev`` - you may have to create this directory in your home folder - I did not have it
-     
-      ``git clone https://github.com/dbraun1981/hal-cia402``
-     
-      ``cd hal-cia402``
-     
-      ``sudo halcompile --install cia402.comp``
+    If like me upon trying to update / upgrade you get errors about raspi-firmware then run these lines...[ as explained here](https://forum.linuxcnc.org/9-installing-linuxcnc/49819-debian-12-bookworm-live-installer-iso-for-linuxcnc-x86-64?start=110#290983)
+    ```
+    rm /etc/{initramfs/post-update.d/,kernel/{postinst.d/,postrm.d/}}z50-raspi-firmware
+    apt purge raspi-firmware
+    ```
+
+3. Install EtherCAT https://forum.linuxcnc.org/ethercat/45336-ethercat-installation-from-repositories-how-to-step-by-step
+
+    -- you dont need to run the hidden (spoiler) commands on that page
+   
+    -- you may have to create the dev directory in your home folder - I did not have one
+
+    -- after ```sudo halcompile --install cia402.comp``` you should be able to move onto the next step of testing with the Delta B3 config from gchesney
+
+4. Example Delta B3 config [https://github.com/gchesney/linuxcnc-asda-b3-e-configs](https://github.com/gchesney/linuxcnc-asda-b3-e-configs)
+
+    * Adjust "setp cia402.0.pos-scale 10000000" in ethercat-test.hal to have some visible movement
 
 **Setup Notes**
 
@@ -32,9 +38,7 @@
   *  Delta ASDA-Soft allows you to configure 1000s of settings and view very useful debugging information on the drives
   * I havent found out how to actually get the firmware update files - maybe they must be requested from Delta..
 
-* Example Delta B3 config [https://github.com/gchesney/linuxcnc-asda-b3-e-configs](https://github.com/gchesney/linuxcnc-asda-b3-e-configs)
 
-  * Adjust "setp cia402.0.pos-scale 10000000" in ethercat-test.hal to have some visible movement
 
 * USB isolator to avoid encoder errors while configuring drive via USB, I assume from ground loops https://www.aliexpress.us/item/3256801182770545.html
   
