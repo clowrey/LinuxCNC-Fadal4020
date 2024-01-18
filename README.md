@@ -33,6 +33,9 @@
 4. Example Delta B3 config [https://github.com/gchesney/linuxcnc-asda-b3-e-configs](https://github.com/gchesney/linuxcnc-asda-b3-e-configs)
 
     * Adjust "setp cia402.0.pos-scale 10000000" in ethercat-test.hal to have some visible movement
+    * Delta ASDA-Soft to disable the limits + emergy stop inputs if you desire 
+    ![image](https://github.com/clowrey/LinuxCNC-Fadal4020/assets/6935928/08a85ce8-dc3d-488c-aabb-e7375cb46d4a)
+
 
 **Setup Notes**
 
