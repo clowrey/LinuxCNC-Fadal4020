@@ -5,13 +5,25 @@
   4. CMM-EC01 x1
   5. EMM-PG01L x1
 
-
+**Useful Links**
+* https://github.com/LinuxCNC/linuxcnc
+* https://github.com/kcjengr/probe_basic/tree/main
+* https://github.com/kcjengr/qtpyvcp
+  
 **Basic Install Steps**
 1. Install linuxCNC which as of now is https://www.linuxcnc.org/iso/LinuxCNC_2.9.2-amd64.hybrid.iso from https://linuxcnc.org/downloads/
 2. Install EtherCAT https://forum.linuxcnc.org/ethercat/45336-ethercat-installation-from-repositories-how-to-step-by-step
-    * just need to run this line from the top of that page because the rest is already configured for you in the image from step 1
+    * run this line from the top of that page because most is already configured for you in the image from step 1
 
       ``sudo apt install ethercat-master libethercat-dev  linuxcnc-ethercat``
+      
+      ``cd ~/dev`` - you may have to create this directory in your home folder - I did not have it
+     
+      ``git clone https://github.com/dbraun1981/hal-cia402``
+     
+      ``cd hal-cia402``
+     
+      ``sudo halcompile --install cia402.comp``
 
 **Setup Notes**
 
@@ -27,5 +39,6 @@
   
   ![image](https://github.com/clowrey/LinuxCNC-Fadal4020/assets/6935928/0739d409-364d-4051-bb37-04512a0eb0d1)
 
-* 
+
+
 
