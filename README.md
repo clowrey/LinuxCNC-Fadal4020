@@ -34,7 +34,7 @@
 
     * Adjust "setp cia402.0.pos-scale 10000000" in ethercat-test.hal to have some visible movement
     * Delta ASDA-Soft to disable the limits + emergy stop inputs if you desire 
-        *P2.011 through 13 to disabled
+        *P2.011 through 13 to disabled - otherwise you will always have the AL013 alarm - you should have Estop in a real machine
     ![image](https://github.com/clowrey/LinuxCNC-Fadal4020/assets/6935928/08a85ce8-dc3d-488c-aabb-e7375cb46d4a)
 
 
