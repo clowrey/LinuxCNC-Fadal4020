@@ -34,6 +34,9 @@
 
 **Setup Notes**
 
+* XRDP works okay as remote desktop server
+  * the user needs to be logged out locally to be able to login via RDP
+
 * Delta files download: https://downloadcenter.deltaww.com/en-US/DownloadCenter?v=1&CID=06&itemID=060201&downloadID=B3%20Series&sort_expr=cdate&sort_dir=DESC
   *  Delta ASDA-Soft allows you to configure 1000s of settings and view very useful debugging information on the drives
   * I havent found out how to actually get the firmware update files - maybe they must be requested from Delta..
