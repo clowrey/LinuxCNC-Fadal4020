@@ -47,6 +47,8 @@
   *  Delta ASDA-Soft allows you to configure 1000s of settings and view very useful debugging information on the drives
   * I havent found out how to actually get the firmware update files - maybe they must be requested from Delta..
 
+* The HAL Scope is cool!! Use the x-drv-act-velo to get some neat torque curves
+![image](https://github.com/clowrey/LinuxCNC-Fadal4020/assets/6935928/b902c1cc-a7c7-462b-9e64-15960e74ded6)
 
 
 * USB isolator to avoid encoder errors while configuring drive via USB, I assume from ground loops https://www.aliexpress.us/item/3256801182770545.html
