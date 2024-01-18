@@ -12,7 +12,8 @@
   
 **Basic Install Steps**
 1. Install linuxCNC which as of now is https://www.linuxcnc.org/iso/LinuxCNC_2.9.2-amd64.hybrid.iso from https://linuxcnc.org/downloads/
-2. Install EtherCAT https://forum.linuxcnc.org/ethercat/45336-ethercat-installation-from-repositories-how-to-step-by-step
+    * The default image from downloads is actually from RodW as of today 1/17/2024 and includes the repos for Probe Basic + EtherCAT https://forum.linuxcnc.org/9-installing-linuxcnc/49819-debian-12-bookworm-live-installer-iso-for-linuxcnc-x86-64
+3. Install EtherCAT https://forum.linuxcnc.org/ethercat/45336-ethercat-installation-from-repositories-how-to-step-by-step
     * run this line from the top of that page because most is already configured for you in the image from step 1
 
       ``sudo apt install ethercat-master libethercat-dev  linuxcnc-ethercat``
