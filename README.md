@@ -1,6 +1,6 @@
 **Fadal 4020 Conversion Parts**
-  1. x3 ASD-B3-2023-E - 2kW, 3.1 kHz Bandwith, 24-bit encoder, PR Mode, Analog Voltage Control, EtherCAT
-  2. x3 ECM-B3M-EA1320RS1 - 2kW, Rated Torque: 9.55 (N-m), Maximum 28.65 (N-m)
+  1. x3 ASD-B3-2023-E 2kW, 3.1 kHz Bandwith, 24-bit encoder, PR Mode, Analog Voltage Control, EtherCAT
+  2. x3 ECM-B3M-EA1320RS1 2kW, Rated Torque: 9.55 (N-m), Maximum 28.65 (N-m)
   3. x1 VFD49AMH23ANSHA VFD-MH300, 15HP, 11kw, (HD 49A), 3 Ø 230VAC, 2000Hz
   4. x1 CMM-EC01 EtherCAT Communication Card
   5. x1 EMM-PG01L Encoder Module
