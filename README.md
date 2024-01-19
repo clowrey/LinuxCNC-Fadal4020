@@ -10,7 +10,7 @@
 * https://github.com/kcjengr/probe_basic/tree/main
 * https://github.com/kcjengr/qtpyvcp
 * https://github.com/persei802/QtDragon_hd/
-* http://tom-itx.no-ip.biz:81/~webpage/cnc/configs/NEW_MILL_SHOP_2.8.4/ -- Axis config with side panel from Tom_L, one for A axis, one without
+* http://tom-itx.no-ip.biz:81/~webpage/cnc/configs/NEW_MILL_SHOP_2.8.4/ -- Axis config with side panel
 * https://github.com/cakeslob/regularmac_800 -- modded axis gui -- could be starting point
   
 **Basic Install Steps**
