@@ -32,7 +32,7 @@
 
 4. Example Delta B3 config [https://github.com/gchesney/linuxcnc-asda-b3-e-configs](https://github.com/gchesney/linuxcnc-asda-b3-e-configs)
 
-    * Adjust "setp cia402.0.pos-scale 10000000" in ethercat-test.hal to have some visible movement
+    * Adjust "setp cia402.0.pos-scale 16777216" in ethercat-test.hal to have some visible movement - this makes 1 revolution = 1 inch in the example
     * Delta ASDA-Soft to disable the limits + emergency stop inputs if you desire 
         * P2.011 through 13 to disabled - otherwise you will always have the AL013 alarm - you should have Estop in a real machine
         * If running from a single phase supply during testing you will also have to disable some of the low voltage alarms..
