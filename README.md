@@ -38,6 +38,10 @@
         * If running from a single phase supply during testing you will also have to disable some of the low voltage alarms..
     ![image](https://github.com/clowrey/LinuxCNC-Fadal4020/assets/6935928/08a85ce8-dc3d-488c-aabb-e7375cb46d4a)
 
+**EtherCAT Notes**
+* ``ethercat slaves`` shows the slaves connected to the master
+* ``ethercat master`` will show some statistics of the master
+* ``ethercat cstruct`` and ``ethercat pdos`` are extremely useful commands for checking your network
 
 **Setup Notes**
 
