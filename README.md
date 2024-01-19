@@ -2,7 +2,7 @@
   1. x3 ASD-B3-2023-E 2kW, 3.1 kHz Bandwith, 24-bit encoder, EtherCAT
   2. x3 ECM-B3M-EA1320RS1 2kW, Rated Torque: 9.55 (N-m), Maximum 28.65 (N-m)
   3. x1 VFD49AMH23ANSHA VFD-MH300, 15HP, 11kw, (HD 49A), 3 Ø 230VAC, 2000Hz
-  4. x1 CMM-EC01 EtherCAT Communication Card
+  4. x1 CMM-EC01 EtherCAT Communication Card -- Should likely be the CMM-EC02 for new installs
   5. x1 EMM-PG01L Encoder Module
 
 **Useful Links**
@@ -11,6 +11,7 @@
 * https://github.com/kcjengr/qtpyvcp
 * https://github.com/persei802/QtDragon_hd/
 * http://tom-itx.no-ip.biz:81/~webpage/cnc/configs/NEW_MILL_SHOP_2.8.4/ -- Axis config with side panel from Tom_L, one for A axis, one without
+* https://github.com/cakeslob/regularmac_800 -- modded axis gui -- could be starting point
   
 **Basic Install Steps**
 1. Install linuxCNC which as of now is https://www.linuxcnc.org/iso/LinuxCNC_2.9.2-amd64.hybrid.iso from https://linuxcnc.org/downloads/
@@ -43,15 +44,22 @@
 * ``ethercat master`` will show some statistics of the master
 * ``ethercat cstruct`` and ``ethercat pdos`` are extremely useful commands for checking your network
 
-**Setup Notes**
+**Linux Setup Notes**
 
 * XRDP works okay as remote desktop server
   * the user needs to be logged out locally to be able to login via RDP
-
-* Delta files download: https://downloadcenter.deltaww.com/en-US/DownloadCenter?v=1&CID=06&itemID=060201&downloadID=B3%20Series&sort_expr=cdate&sort_dir=DESC
+    
+**Delta B3 Servo Notes**
+* [Delta files download](https://downloadcenter.deltaww.com/en-US/DownloadCenter?v=1&CID=06&itemID=060201&downloadID=B3%20Series&sort_expr=cdate&sort_dir=DESC)
   *  Delta ASDA-Soft allows you to configure 1000s of settings and view very useful debugging information on the drives
   * I havent found out how to actually get the firmware update files - maybe they must be requested from Delta..
 
+**Delta VFD Notes**
+* [Delta files download](https://downloadcenter.deltaww.com/en-US/DownloadCenter?v=1&CID=06&itemID=060201&downloadID=B3%20Series&sort_expr=cdate&sort_dir=DESC)
+  *  Delta ASDA-Soft allows you to configure 1000s of settings and view very useful debugging information on the drives
+  * I havent found out how to actually get the firmware update files - maybe they must be requested from Delta..
+    
+**LinuxCNC Notes**
 * The HAL Scope is cool!! Use the x-drv-act-velo to get some neat torque curves
 ![image](https://github.com/clowrey/LinuxCNC-Fadal4020/assets/6935928/b902c1cc-a7c7-462b-9e64-15960e74ded6)
 
