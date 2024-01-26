@@ -43,6 +43,7 @@
 * ``ethercat slaves`` shows the slaves connected to the master
 * ``ethercat master`` will show some statistics of the master
 * ``ethercat cstruct`` and ``ethercat pdos`` are extremely useful commands for checking your network
+* Setup guide - I did not use this for building from source - but the getting started with hardware part is good -https://www.forum.linuxcnc.org/ethercat/49771-ethercat-build-from-source-full-instructions
 
 **Linux Setup Notes**
 
