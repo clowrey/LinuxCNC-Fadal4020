@@ -59,6 +59,8 @@
 * [Delta files download](https://downloadcenter.deltaww.com/en-US/DownloadCenter?v=1&CID=06&itemID=060201&downloadID=B3%20Series&sort_expr=cdate&sort_dir=DESC)
   *  Delta ASDA-Soft allows you to configure 1000s of settings and view very useful debugging information on the drives
   * I havent found out how to actually get the firmware update files - maybe they must be requested from Delta..
+  * Settings:
+    * 09-01 MODBUS baud rate to 115.2 to speed up settings changes
     
 **LinuxCNC Notes**
 * The HAL Scope is cool!! Use the x-drv-act-velo to get some neat torque curves
